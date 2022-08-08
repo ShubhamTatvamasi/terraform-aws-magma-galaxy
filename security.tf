@@ -1,6 +1,6 @@
 resource "aws_security_group" "ec2_sg" {
-  name        = "${var.project_name} Security Group"
-  vpc_id      = data.aws_vpc.default.id
+  name   = "${var.project_name} Security Group"
+  vpc_id = data.aws_vpc.default.id
 
   dynamic "ingress" {
     for_each = var.sg_ports

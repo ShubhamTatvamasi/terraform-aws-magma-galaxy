@@ -23,16 +23,16 @@ variable "volume_size" {
 }
 
 variable "volume_type" {
-  type = string
+  type    = string
   default = "gp3"
 }
 
 variable "spot_instance" {
-  type = bool
+  type    = bool
   default = false
 }
 
 variable "spot_type" {
-  type = string
+  type    = string
   default = "one-time"
 }
