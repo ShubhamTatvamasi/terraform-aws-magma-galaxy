@@ -7,6 +7,7 @@ terraform init
 
 Create a VM:
 ```bash
+export TF_VAR_spot_instance=true
 terraform apply -auto-approve
 ```
 
