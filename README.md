@@ -7,7 +7,7 @@ terraform init
 
 Create a VM:
 ```bash
-# Set this if you just want to test the code, so it will be you temp VM with 70% discount.
+# Set this if you want to use this for testing, so it will be you temp VM with 70% discount.
 export TF_VAR_spot_instance=true
 
 # Set this if you want to use this for production.
