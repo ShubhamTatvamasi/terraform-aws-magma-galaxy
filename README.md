@@ -1,5 +1,7 @@
 # terraform-aws-magma-galaxy
 
+Update your region in `main.tf` file.
+
 Initalize Terraform:
 ```bash
 terraform init
