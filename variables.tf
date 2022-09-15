@@ -13,7 +13,7 @@ variable "sg_ports" {
 variable "instance_type" {
   type        = string
   description = "Instance Type"
-  default     = "t3a.large"
+  default     = "t3a.xlarge"
 }
 
 variable "volume_size" {
