@@ -7,15 +7,25 @@ Initalize Terraform:
 terraform init -upgrade
 ```
 
-Create a VM:
+Create a instance:
 ```bash
-# Set this if you want to use this for testing, so it will be you temp VM with 70% discount.
+# Set this if you want to use this for testing, so it will be you temp instance with 70% discount.
 export TF_VAR_spot_instance=true
 
 terraform apply -auto-approve
 ```
 
-Destroy the VM:
+Update terraform state file:
+```bash
+terraform refresh
+```
+
+Get public IP of the instance:
+```bash
+terraform output -raw public_ip
+```
+
+Destroy the instance:
 ```bash
 terraform destroy -auto-approve
 ```
