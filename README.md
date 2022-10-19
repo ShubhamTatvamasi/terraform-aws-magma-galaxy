@@ -4,7 +4,7 @@ Update your region in `main.tf` file.
 
 Initalize Terraform:
 ```bash
-terraform init
+terraform init -upgrade
 ```
 
 Create a VM:
