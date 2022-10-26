@@ -20,9 +20,9 @@ Update terraform state file:
 terraform refresh
 ```
 
-Get public IP of the instance:
+SSH into the VM:
 ```bash
-terraform output -raw public_ip
+ssh ubuntu@$(terraform output -raw public_ip)
 ```
 
 Destroy the instance:
