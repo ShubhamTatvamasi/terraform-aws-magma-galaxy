@@ -9,7 +9,7 @@ terraform init -upgrade
 
 Create a instance:
 ```bash
-# Set this if you want to use this for testing, so it will be you temp instance with 70% discount.
+# Set this if you want to use the instance for testing, it will give you upto 70% discount.
 export TF_VAR_spot_instance=true
 
 terraform apply -auto-approve
