@@ -1,6 +1,6 @@
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 4.0"
+  version = "~> 6.1"
 
   name = var.project_name
 
@@ -13,12 +13,10 @@ module "ec2_instance" {
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
   subnet_id              = data.aws_subnets.default.ids.0
 
-  root_block_device = [
-    {
-      volume_type = var.volume_type
-      volume_size = var.volume_size
-    }
-  ]
+  root_block_device = {
+    volume_type = var.volume_type
+    volume_size = var.volume_size
+  }
 
   tags = {
     Name = var.project_name
