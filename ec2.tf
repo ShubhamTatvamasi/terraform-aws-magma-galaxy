@@ -14,8 +14,8 @@ module "ec2_instance" {
   subnet_id              = data.aws_subnets.default.ids.0
 
   root_block_device = {
-    volume_type = var.volume_type
-    volume_size = var.volume_size
+    type = var.volume_type
+    size = var.volume_size
   }
 
   tags = {
